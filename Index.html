@@ -1,39 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>To Do List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeafTasks | Grow One Task at a Time</title>
 
-<link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<script src="https://kit.fontawesome.com/6b2c0d8f6d.js" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<div class="background"></div>
 
 <div class="container">
 
-<h1>🌿 My Tasks</h1>
+    <!-- Header -->
 
-<div class="input-area">
+    <header>
 
-<input
-type="text"
-id="taskInput"
-placeholder="Add a new task..."
->
+        <div class="logo">
+            🌿
+        </div>
 
-<button id="addBtn">
-<i class="fas fa-plus"></i>
-</button>
+        <h1>LeafTasks</h1>
 
-</div>
+        <p>Grow One Task at a Time</p>
 
-<ul id="taskList"></ul>
+    </header>
+
+    <!-- Input -->
+
+    <section class="task-input">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="What's your next task?"
+        >
+
+        <button id="addBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add
+
+        </button>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search task..."
+        >
+
+    </section>
+
+    <!-- Filters -->
+
+    <section class="filters">
+
+        <button class="filter active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter" data-filter="active">
+            Active
+        </button>
+
+        <button class="filter" data-filter="completed">
+            Completed
+        </button>
+
+    </section>
+
+    <!-- Counter -->
+
+    <section class="counter">
+
+        <div>
+
+            Total :
+            <span id="totalTask">
+                0
+            </span>
+
+        </div>
+
+        <div>
+
+            Completed :
+            <span id="completedTask">
+                0
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- Task List -->
+
+    <ul id="taskList">
+
+    </ul>
+
+    <!-- Empty -->
+
+    <div id="emptyState">
+
+        <i class="fa-solid fa-seedling"></i>
+
+        <h3>No Tasks Yet</h3>
+
+        <p>Add your first task and start growing 🌱</p>
+
+    </div>
 
 </div>
 
