@@ -9,7 +9,7 @@ A simple to-do list app that lets you add, search, filter, and track tasks — w
 </p>
 
 <p align="center">
-  <strong><a href="https://your-deployment-link.netlify.app/">🌐 Live Demo</a></strong>
+  <strong><a href="https://sprouttasks.netlify.app/">🌐 Live Demo</a></strong>
 </p>
 
 ---
@@ -17,6 +17,7 @@ A simple to-do list app that lets you add, search, filter, and track tasks — w
 ##  Preview
 
 <p align="center">
+  
   <img src="assets/preview.PNG" alt="Leaf Task Manager Preview" width="50%">
 </p>
 
